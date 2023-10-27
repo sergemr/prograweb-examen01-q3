@@ -1,0 +1,53 @@
+<div class="form-container">
+
+
+    <form  #form="ngForm" ngNativeValidate>
+            
+
+<label class="title"> Censo</label>
+<br>
+<br>
+<br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput name="Nombre" required placeholder="Nombre" value="">
+          </mat-form-field>
+          
+          <br>
+
+            
+
+          <mat-form-field class="example-full-width">
+              <mat-label>Apellido</mat-label>
+              <input matInput name="Apellido" placeholder="Apellido" value="">
+            </mat-form-field>
+            <br>
+
+            
+            <mat-form-field class="example-full-width">
+              <mat-label>Correo</mat-label>
+              <input matInput name="Correo" type="email" required placeholder="Correo" value="">
+            </mat-form-field>
+            <br>
+
+        
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Edad</mat-label>
+              <input matInput name="Edad" type="number" placeholder="Edad" value="">
+            </mat-form-field>
+            <br>
+            
+     
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Numero identificacion</mat-label>
+              <input matInput name="Cedula" placeholder="Numero identificacion" value="">
+            </mat-form-field>
+            <br>
+
+        
+        
+            <button mat-raised-button (click)="onSubmit()">ENVIAR</button>
+        </form>
+</div>
