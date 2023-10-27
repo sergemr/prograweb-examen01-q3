@@ -1,0 +1,66 @@
+
+<div class="Form">
+    <h1>Censo</h1>
+    <br>
+    <br>
+    
+
+    <form #form="ngForm" ngNativeValidate>
+        <label for="Username">Nombre</label><br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Ex. Angel" 
+        type="text" 
+        name="username" 
+        id="username"
+        [(ngModel)]="formData.username"
+        required
+        >
+      </mat-form-field>
+    
+      <form #form="ngForm" ngNativeValidate>
+        <label for="Username">Apellido</label><br>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Ex. Zamora" 
+          type="text" 
+          name="apellido" 
+          id="apellido"
+          [(ngModel)]="formData.apellido"
+          >
+        </mat-form-field>
+        
+        <br><label for="Username">Email</label><br>
+      <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Ex. alumno@gmail.com" 
+          type="email"
+          name="email"
+          id="email"
+          [(ngModel)]="formData.email"
+          required
+          >
+        </mat-form-field>
+        <!-- [(ngModule)]="formData.age"-->
+        <br><label for="Username">Edad</label><br>
+        <mat-form-field class="example-full-width">
+          <mat-label>Edad</mat-label>
+          <input matInput placeholder="Ex. 18" 
+          type="number"
+          name="edad"
+          id="edad"
+          [(ngModel)]="formData.edad"
+          >
+        </mat-form-field>
+        <br><label for="Username">Identificacion</label><br>
+        <mat-form-field class="example-full-width">
+            <mat-label>Identificacion</mat-label>
+            <input matInput placeholder="Ex. 123561649  " 
+            type="text"
+            name="cedula"
+            id="cedula"
+            [(ngModel)]="formData.cedula"
+            >
+          </mat-form-field>
+       
+      <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Enviar</button>
+    </form>
