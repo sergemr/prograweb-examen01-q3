@@ -1,0 +1,62 @@
+<h2 id="censo">Censo</h2>
+<div class="Form">
+  <form #form="ngForm" ngNativeValidate>
+    <h2 class="formh2">Nombre</h2>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Ex. John" 
+      type="text" 
+      name="nombre" 
+      id="nombre"
+      [(ngModel)]="formData.nombre"
+      required
+      >
+    </mat-form-field>
+    <h2 class="formh2">Apellido</h2>
+    <mat-form-field class="example-full-width">
+        <mat-label>Apellido</mat-label>
+        <input matInput placeholder="Ex. Smith" 
+        type="text"
+        name="apellido"
+        id="apellido"
+        [(ngModel)]="formData.apellido"
+        required
+        >
+      </mat-form-field>
+      <h2 class="formh2">Correo</h2>
+           <mat-form-field class="example-full-width">
+        <mat-label>Correo</mat-label>
+        <input matInput placeholder="Ex. johnsmith@gmail.com" 
+        type="email"
+        name="correo"
+        id="correo"
+        required
+        [(ngModel)]="formData.correo"
+        >
+      </mat-form-field>
+      <h2 class="formh2">Edad</h2>
+           <mat-form-field class="example-full-width">
+        <mat-label>Edad</mat-label>
+        <input matInput placeholder="Ex. 26" 
+        type="number"
+        name="edad"
+        id="edad"
+        required
+        [(ngModel)]="formData.edad"
+        >
+      </mat-form-field>
+      <h2 class="formh2">Identificación</h2>
+           <mat-form-field class="example-full-width">
+        <mat-label>Identificación</mat-label>
+        <input matInput placeholder="Ex. 1862826829" 
+        type="number"
+        name="id"
+        id="id"
+        required
+        [(ngModel)]="formData.id"
+        >
+      </mat-form-field>
+       <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Enviar</button>
+  </form>
+</div>
+

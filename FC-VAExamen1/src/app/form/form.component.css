@@ -1,0 +1,32 @@
+.Form{
+    margin-top:10px;
+    margin-left: 400px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width:100%;
+  }
+  h1,
+  h2{
+    color:black;
+    margin-top:50px;
+    margin-left: 400px;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }
+
+  .formh2{
+    margin-top: 0%;
+    color:black;
+    margin-left: 0px;
+  }
+  #censo{
+    font-weight: bold;
+  }
