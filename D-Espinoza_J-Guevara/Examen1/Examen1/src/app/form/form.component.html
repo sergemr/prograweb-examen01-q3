@@ -1,0 +1,38 @@
+<div class="componente-fondo">
+   
+      <div class="form-container">
+        <form #form="ngForm" ngNativeValidate>
+          <strong>Censo</strong>
+          <h3>Nombre</h3>
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre</mat-label>
+                <input [(ngModel)]="formData.nombre" matInput placeholder="Nombre" required name="nombre">
+              </mat-form-field>
+              <h3>Apellido</h3>
+              <mat-form-field class="example-full-width">
+                <mat-label>Apellido</mat-label>
+                <input matInput [(ngModel)]="formData.apellido" placeholder="Apellido" name="apellido">
+              </mat-form-field>
+              <h3>Correo</h3>
+              <mat-form-field class="example-full-width">
+                <mat-label>Correo</mat-label>
+                <input matInput type="email" [(ngModel)]="formData.correo" placeholder="Correo" required name="correo">
+              </mat-form-field>
+              <h3>Edad</h3>
+              <mat-form-field class="example-full-width">
+                <mat-label>Edad</mat-label>
+                <input type="number" [(ngModel)]="formData.edad" matInput placeholder="Edad" name="edad" id="edad">
+              </mat-form-field>
+              <h3>Identificacion</h3>
+              <mat-form-field class="example-full-width">
+                <mat-label>Identificacion</mat-label>
+                <input matInput [(ngModel)]="formData.id" placeholder="identificacion" name="id" id="id">
+              </mat-form-field>
+           
+            
+            <button mat-raised-button type="submit" (click)="onSubmit()">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+
