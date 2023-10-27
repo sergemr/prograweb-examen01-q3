@@ -37,6 +37,6 @@ onReset(){
   edad:'',
   numeroidentidad:'',
    
-  };
+ };
 }
 }

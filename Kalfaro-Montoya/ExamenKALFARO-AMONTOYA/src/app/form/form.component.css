@@ -1,7 +1,5 @@
 .form-container{
-    margin-top: 100px;
-    width: 100vw;
-    height: 100vh;
+   align-items: center;
     background-color: white;
 }
 .form-container form{
