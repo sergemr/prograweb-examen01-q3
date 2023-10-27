@@ -1,0 +1,31 @@
+.Form {
+    margin: 150px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border: 2px solid #000; 
+    padding: -100px;
+
+  }
+  
+ 
+  .mat-form-field {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+ 
+  button[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+  }
+  :host{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  
