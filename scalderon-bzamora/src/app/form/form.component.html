@@ -1,0 +1,35 @@
+<div class="formulario">
+  <form #form="ngForm" ngNativeValidate (ngSubmit)="onSubmit"> 
+    <h1>Censo</h1>
+    <label for="example-full-width">Nombre</label>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Nombre" name="name" [(ngModel)]="formData.nombre" required>
+    </mat-form-field>
+    <label for="example-full-width">Apellido</label>
+    <mat-form-field class="example-full-width">
+      <mat-label>Apellido</mat-label>
+      <input matInput placeholder="Apellido" name="apellido" [(ngModel)]="formData.apellido">
+    </mat-form-field>
+    <label for="example-full-width">Correo</label>
+    <mat-form-field class="example-full-width">
+      <mat-label>Correo</mat-label>
+      <input matInput placeholder="Correo" name="correo" [(ngModel)]="formData.correo" required>
+    </mat-form-field>
+    <label for="example-full-width">Edad</label>
+    <mat-form-field class="example-full-width">
+      <mat-label>Edad</mat-label>
+      <input matInput placeholder="Edad" name="edad" [(ngModel)]="formData.edad">
+    </mat-form-field>
+    <label for="example-full-width">Identificacion</label>
+    <mat-form-field class="example-full-width">
+      <mat-label>Identificacion</mat-label>
+      <textarea matInput placeholder="Identificacion" name="identificacion" [(ngModel)]="formData.identificacion" ></textarea>
+    </mat-form-field>
+    
+    <button mat-stroked-button type="submit" (click)="onSubmit()">Enviar</button>
+
+    
+  </form>
+</div>
+
