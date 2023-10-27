@@ -1,0 +1,37 @@
+<h1>**Formulario Censos 2023**</h1>
+<div>
+    <form #form="ngForm" ngNativeValidation>
+       
+        <mat-slide-toggle>Toggle me!</mat-slide-toggle> 
+        
+        <div class="form-group">
+
+            <mat-form-field>
+                <mat-label>Usuario</mat-label>
+                <input matInput  type="text" id="usuario" name="usuario" placeholder="user" [(ngModel)]="formData.usuario" required >
+            </mat-form-field><br>
+
+            <mat-form-field>
+                <mat-label>Correo</mat-label>
+                <input matInput  type="text" id="correo" name="correo" placeholder="email" [(ngModel)]="formData.correo" required >
+            </mat-form-field><br>
+
+            <mat-form-field>
+                <mat-label>Clave</mat-label>
+                <input matInput  type="password" id="clave" name="clave" placeholder="password" [(ngModel)]="formData.clave" required  >
+            </mat-form-field><br>
+
+            <section>
+              
+              <div class="example-button-row">
+              <button type="submit" (click)="onSubmit()" mat-raised-button >Continuar</button>
+
+                  
+                </div>
+              </section>
+             
+        </div> 
+
+    </form>
+</div>
+
