@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="form.component.css">
+
+<div class="form-container">
+    <form #form="ngForm">
+        <mat-form-field class="example-full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput id="nombre" name="nombre" [(ngModel)]="formData.nombre" placeholder="Nombre" required>
+        </mat-form-field><br><br>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Apellido</mat-label>
+            <input matInput id="apellido" name="apellido" [(ngModel)]="formData.apellido" placeholder="Apellido">
+        </mat-form-field><br><br>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput id="correo" name="correo" [(ngModel)]="formData.correo" placeholder="Correo electrónico" required>
+        </mat-form-field><br><br>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Edad</mat-label>
+            <input matInput id="edad" name="edad" [(ngModel)]="formData.edad" placeholder="Edad">
+        </mat-form-field><br><br>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Número de identificación</mat-label>
+            <input matInput id="cedula" name="cedula" [(ngModel)]="formData.cedula" placeholder="Número de identificación">
+        </mat-form-field><br><br>
+
+        <button type="submit" (click)="onSubmit()">ENVIAR</button>
+    </form>
+</div>
