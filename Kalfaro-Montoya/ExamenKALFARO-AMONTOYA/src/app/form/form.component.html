@@ -1,0 +1,31 @@
+<div class="form-container">
+    <form #form="ngForm" ngNtiveValidate >
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre"[(ngModel)]="formData.nombre"name="nombre" id="nombre"required/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Apellido</mat-label>
+        <input matInput placeholder="Apellido"[(ngModel)]="formData.apellido"name="apellido" id="apellido"/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Correo</mat-label>
+        <input matInput placeholder="Correo"[(ngModel)]="formData.correo"name="correo" id="correo"required/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Edad</mat-label>
+        <input matInput placeholder="Edad"[(ngModel)]="formData.edad"name="edad" id="edad"/>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Numero de identidad</mat-label>
+        <input matInput placeholder="Numero de identidad"[(ngModel)]="formData.numeroidentidad"name="numeroidentidad" id="numeroidentidad"/>
+      </mat-form-field>
+    <button class="my-button"(click)="onSudmit">Enviar</button>
+    <button class="my-button"(click)="onReset">Reset</button>
+    </form>
+  </div>

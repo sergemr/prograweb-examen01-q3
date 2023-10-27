@@ -1,0 +1,10 @@
+  .nav-link{
+    color: white !important;
+    margin: 20px;
+}
+.titulo{
+  color: black;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
